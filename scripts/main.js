@@ -198,7 +198,7 @@ function printHolidays(data, i) {
 }
 
 function getHolidays() {
-  fetch("/../data/holidays.json")
+  fetch("../data/holidays.json")
     .then((response) => response.json())
     .then((data) => {
       console.log(data, "response");
