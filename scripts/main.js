@@ -198,10 +198,10 @@ function printHolidays(data, i) {
 }
 
 function getHolidays() {
-  fetch("https://elinahulbert.github.io/data/holidays.json")
+  fetch("../data/holidays.json")
     .then((response) => response.json())
     .then((response) => {
-      console.log(response);
+      console.log(response, "response");
       for (let i = 0; i < 5; i++) {
         if (!localStorage.length == 0) {
           var selected = localStorage.getItem("favourites").includes(i + 1);
