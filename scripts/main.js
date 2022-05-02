@@ -200,14 +200,14 @@ function printHolidays(data, i) {
 function getHolidays() {
   fetch("../data/holidays.json")
     .then((response) => response.json())
-    .then((response) => {
-      console.log(response, "response");
+    .then((data) => {
+      console.log(data, "response");
       for (let i = 0; i < 5; i++) {
         if (!localStorage.length == 0) {
           var selected = localStorage.getItem("favourites").includes(i + 1);
         }
-        createListItems(response[i], selected);
-        printHolidays(response[i], i);
+        createListItems(data[i], selected);
+        printHolidays(data[i], i);
 
         // Function call >>
       }
