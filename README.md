@@ -29,7 +29,7 @@ Me,
 <br>
 [@ChelseaBlaze] (https://github.com/ChelseaBlaze).
 
-##### :copyright: Design
+##### :art: Design
 
 The initial design we created in Figma:
 <br>
